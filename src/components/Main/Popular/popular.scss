@@ -1,0 +1,60 @@
+.movie__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    list-style: none;
+}
+
+
+.movie__item {
+    width: 307px;
+    background: #07181F;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    position: relative;
+
+}
+
+.movie__img {
+    width: 267px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.movie__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 13px;
+    
+}
+
+
+.movie__time {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin: 0;
+}
+
+.movie__raiting {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 6px 7px;
+    background: #000000;
+    border-radius: 6px;
+    position: absolute;
+    top: 16px;
+    right: 13px;
+
+}

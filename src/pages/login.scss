@@ -1,0 +1,52 @@
+.login__form {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form__wrapper {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: bisque;
+}
+
+
+.login__title {
+    
+    font-size: 36px;
+    line-height: 29px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.wrappper__email {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.wrappper__password{
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+.log__input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.login__btn{
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightblue;
+
+}
