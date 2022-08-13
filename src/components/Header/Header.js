@@ -10,7 +10,7 @@ export const Header = () => {
 				<div className='header__inner'>
 					<ul className='header__list'>
 						<li className='header__item'>
-							<Link className='header__link' to={'/homepage'}>
+							<Link className='header__link' to={'/'}>
 								Home Page
 							</Link>
 						</li>

@@ -5,6 +5,8 @@ import { Popular } from '../Main/Popular/Popular';
 import { RatedMovie } from '../Main/RatedMovie';
 import { UpComing } from '../Main/UpComing';
 import { TvShow } from '../Main/TvShow';
+import { SinglePage } from "../../pages/SinglePage/SinglePage";
+import { SingleTv } from "../../pages/SingleTv/SingleTv";
 
 export function All(){
     return(
@@ -18,6 +20,8 @@ export function All(){
 				<Route path='/rated' element={<RatedMovie/>}/>
 				<Route path='/upcoming' element={<UpComing/>}/>
 				<Route path='/tvshow' element={<TvShow/>}/>
+				<Route path='/movie/:id' element={<SinglePage/>}/>
+				<Route path='/tv/:id' element={<SingleTv/>}/>
 			</Routes>
 		</div>
         </>
