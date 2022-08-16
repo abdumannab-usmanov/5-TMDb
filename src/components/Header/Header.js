@@ -1,8 +1,24 @@
 import './header.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 
 export const Header = () => {
+
+	const [inputVal, setInputVal] = useState("")
+
+	const navigate = useNavigate()
+
+	useEffect(() => {
+		if(inputVal.trim().length){
+			navigate("/search/" + inputVal)
+		}
+		else{
+			navigate("/")
+		}
+
+	},[inputVal])
+
 	return (
 		<>
 		<header className='header'>
@@ -37,7 +53,9 @@ export const Header = () => {
 					</ul>
 
 					<div>
-						<input className='header__input' type='text' placeholder='Search' />
+						<input onInput={(evt) => setInputVal(evt.target.value)} 
+						className='header__input' type='search' placeholder='Search' 
+						/>
 					</div>
 				</div>
 			</div>
